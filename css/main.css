@@ -1,0 +1,470 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Header */
+
+header {
+    background-image: url("../src-images/educationPattern.png");
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+
+.headerTop {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100vw;
+    background-image: url("../src-images/educationPattern.png");
+}
+
+div.logo {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+}
+
+nav {
+    width: 80%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+article {
+    padding-top: 15%;
+    padding-bottom: 12%;
+    color: #541212;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+article .myName {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logoText {
+    font-family: 'Nova Slim', cursive;
+    color: #8B9A46;
+}
+
+nav ul {
+    display: flex;
+    min-width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#myLogo {
+    max-width: 50%;
+}
+
+* a {
+    text-decoration: none;
+}
+
+#logoText h2 {
+    font-size: 16px;
+    line-height: 0em;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+/* input[type="radio"] {
+    appearance: none;
+    display: none;
+} */
+
+/* label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    transition: linear 0.3s;
+    top: 30px;
+} */
+
+/* input[type="radio"]:checked + label > a{
+    color:#8B9A46;
+    font-weight: 900;
+    transition: 0.3s;
+} */
+
+nav ul li a {
+    color:#541212;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    font-weight: bolder;
+}
+
+/* nav ul li:first-child > a {
+    color: #8B9A46;
+    font-weight: bolder;
+} */
+
+nav ul li:hover > a,
+nav ul li:focus > a {
+    color:#8B9A46;
+    font-weight: bolder;
+}
+
+article .myName h1 {
+    font-size: 3em;
+    line-height: 0px;
+}
+
+article .myName h3 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+
+.download-btn {
+    font-size: 18px;
+    padding: 20px 15px;
+    color: #fff;
+    background-color: rgba(84, 18, 18, .7);
+    max-width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.download-btn:hover {
+    background-color: #8B9A46;
+}
+
+
+/* main section  */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    font-size: 18px;
+    line-height: 1.5em;
+    max-width: 100%;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.aboutMeIcon, .aboutMeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutMe .aboutMeIcon {
+    border-bottom: 3px solid #8B9A46;
+    padding-bottom: 1%;
+    width: 50%;
+}
+
+main .icons {
+    font-size: 35px;
+    color: #541212
+}
+
+.experience {
+    background-color: #EEEEEE;
+    padding: 155px 0;
+    display: flex;
+    width: 100%;
+}
+
+.experienceHead {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experienceBody {
+    width: 75%;
+    border-left: 1px dashed #541212;
+    text-align: justify;
+}
+
+main h2 {
+    color: #541212;
+}
+
+.education {
+    display: flex;
+    width: 100%;
+    padding: 150px 0;
+}
+
+.educationHead {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.educationBody {
+    width: 75%;
+    border-left: 1px dashed #541212;
+    text-align: justify;
+}
+
+.edu, .course {
+    display: flex;
+    align-items: center;
+}
+
+.edu {
+    padding-bottom: 3%;
+}
+
+.projects {
+    background-color: #EEEEEE;
+    display: flex;
+    max-width: 100%;
+    padding: 150px 0;
+}
+
+.projectsHead {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectsBody {
+    width: 75%;
+    border-left: 1px dashed #541212;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 70vh;
+}
+
+.projectsBody .projectList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectList {
+    transition: all 0.5s ease;
+}
+
+.projectsBody .projectList img{
+    width: 20vw;
+}
+
+.portfolioImg {
+    background-color: gray;
+    width: 561px;
+    height: 260px;
+}
+
+.over {
+    position: absolute;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    transition: padding 0.5s;
+    padding: 0;
+  }
+  
+  .over:hover {
+    padding: 30px; 
+  }
+
+.over a {
+    color: #fff;
+}
+
+
+/* Contact Me */
+.contactMe {
+    display: flex;
+    max-width: 100%;
+    height: 70vh;
+}
+
+.contactMeContainer {
+    display: flex;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+}
+
+.contact-links{
+    width: 50%;
+    padding: 8% 5% 10% 5%;
+}
+
+.contact-links {
+    background-color: #EEEEEE;
+    background-image: url("../src-images/educationPattern.png");
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links h2 {
+    color: #541212;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contact-form {
+    background-color: #EEEEEE;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    width: 100%;
+    padding-top: 3%;
+}
+
+.contact-links .links {
+    width: 65%;
+    padding-top: 10px;
+}
+
+.contact-links .links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+.contact-links .links ul li a {
+    color:rgba(84, 18, 18, .7);
+    transition: all 0.5s ease;
+}
+
+.contact-links .links ul li a:hover {
+    color: #8B9A46;
+    font-weight: bolder;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+form input{
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(84, 18, 18, .1);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #541212;
+    width: 70%;
+}
+
+form textarea {
+    height: 200px;
+    outline: none;
+    background-color: rgba(238, 238, 238, .1);
+    border: 1px solid rgba(84, 18, 18, .1);
+    color:#541212;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    resize: none;
+    width: 70%;
+    margin: 10px 0;
+}
+
+form button {
+    width: 200px;
+    height: 40px;
+    background-color: rgba(84, 18, 18, .7);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+} 
+
+form button:hover {
+    background-color: #8B9A46;
+    cursor: pointer;
+}
+
+
+footer {
+    background-image: url("../src-images/educationPattern.png");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px;
+}
+
+footer .copyRight {
+   color: #541212;
+   font-weight: bolder;
+   font-size: 20px;
+   font-family: 'Kodchasan', sans-serif;
+}
+
+footer .soical a {
+    color:rgba(84, 18, 18, .7);
+    font-size: 45px;
+    transition: all 0.5s ease;
+}
+
+footer .soical a:hover {
+    color: #8B9A46;
+}
+
+
+

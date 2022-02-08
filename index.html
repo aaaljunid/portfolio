@@ -2,94 +2,311 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="css/styles.css">
-
+    <meta itemprop="name" content="Ahmed Logo for Portofolio">
+    <meta itemprop="image" content="images/myLogo.svg">
     <title>Ahmed Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Handlee&family=Kodchasan&family=Major+Mono+Display&family=Montserrat+Alternates:ital,wght@0,400;1,500&family=Nova+Mono&family=Nova+Slim&family=Righteous&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Handlee&family=Kodchasan&family=Major+Mono+Display&family=Montserrat+Alternates&family=Nova+Mono&family=Nova+Slim&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cinzel+Decorative&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<!-- start of page -->
 <body>
-   
-    <div class="container-fluid">
-        <!-- start of header -->
-        <header>
-            <div class="row">
-                <div class="col-lg-6 col-md-5 logo_container">
-                    <img class="logoImg" src="img/logo.png" alt="logo of the portfolio">
-                </div>
-                <div class="col-lg-6 col-md-7 about_me">
-                    <h1 class="my_name">Ahmed Abdullah Al Junid</h1>
-                    <h2 class="job">Front End Developer Neenja</h2>
-                </div>
-            </div>
-        </header><!-- end of header -->
-
-
-        <hr class="line">
-
-        <!-- start of main image -->
-        <section>
-            <div class="row">
-                <div class="col-md-12">
-                    <img src="img/webdesign-main-image.jpg" alt="responsive desgin" class="main_image">
+    <header id="homeLink">
+        <div class="headerTop">
+            <div class="logo">
+                <picture id="logoImage">
+                    <source media="(min-width: 750px)" srcset="images/myLogoo-1600_large_2x.png 2x, images/myLogoo-800_large_1x.png">
+                    <source media="(min-width: 500px)" srcset="images/myLogoo-600_medium.png">
+                    <img id="myLogo" src="images/myLogoo-320_small.png" alt="image for logo Ahmed Portfolio">
+                </picture>
+                <div id="logoText">
+                    <h2>Ahmed Developer</h2>
                 </div>
             </div>
-        </section><!-- end of main image -->
-
-        <section class="main_section">
-            <!-- start of main topic-->
-            <div class="row main_topic_container">
-                <div class="col-md-12 ">
-                    <h1>Techniques that are used to build a website:</h1>
-                </div>
-            </div><!-- end of main topic-->
-
-            <div class="row details_container"><!-- start of the details-->
-                <div class="col-lg-4  col-md-12 details">
-                    <img src="img/html5-image.png" alt="html5 image" class="small-images">
-                    <h2>HTML5</h2>
-                    <p class="custom_p"><span class="bold_text">HTML</span> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">more details...</a></p>
-                    
-                </div>  
-                <div class="col-lg-4 col-md-12 details">
-                    <img src="img/css-image.png" alt="css image" class="small-images">
-                    <h2>CSS3</h2>
-                    <p class="custom_p"><span class="bold_text">CSS</span> (Cascading Style Sheets) is the code you use to style your webpage, <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">more details...</a></p>
-                </div>
-                <div class="col-lg-4 col-md-12 details">
-                    <img src="img/js-image.png" alt="javascript image" class="small-images">
-                    <h2>JavaScript</h2>
-                    <p class="custom_p"><span class="bold_text">JavaScript</span> is a programming language that adds interactivity to your website, <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">more details...</a></p>
-                </div>
-            </div><!-- end of the details-->
-        </section>
-    </div> 
-        
-    <footer>
-        <div class="jumbotron text-center custom_footer">
             <nav>
-                <div class="row social_icon">
-                    <div class="col-md-12">
-                        <div class="btn-group btn-group-sm">
-                            <button type="button" class="btn custom_btn_github"><i class="fab fa-github-square fa-3x"></i></button>
-                            <button type="button" class="btn custom_btn_linkedin"><i class="fab fa-linkedin fa-3x"></i></button>
-                            <button type="button" class="btn custom_btn_twitter"><i class="fab fa-twitter-square fa-3x"></i></button>
-                        </div>
+                <ul>
+                    <li><a href="#homeLink">Home</a></li>
+                    <li><a href="#aboutMeLink">About Me</a></li>
+                    <li><a href="#experienceLink">Experience</a></li>
+                    <li><a href="#educationLink">Education & Courses</a></li>
+                    <li><a href="#projectsLink">Projects</a></li>
+                    <li><a href="#contactMeLink">Contact Me</a></li>
+                </ul>
+                <!-- <ul>
+                    <li>
+                        <input type="radio" name="radio" id="homeNav" checked>
+                        <label for="homeNav"><a href="#homeLink">Home</a></label>
+                        
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="aboutNav">
+                        <label for="aboutNav"><a href="#aboutMeLink">About Me</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="experienceNav">
+                        <label for="experienceNav"><a href="#experienceLink">Experience</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="educationNav">
+                        <label for="educationNav"><a href="#educationLink">Education & Courses</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="projectsNav">
+                        <label for="projectsNav"><a href="#projectsLink">Projects</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="contactNav">
+                        <label for="contactNav"><a href="#contactMeLink">Contact Me</a></label>
+                    </li>
+                    <<li> 
+                        <input type="radio" name="radio" id="homeNav" checked>
+                        <label for="homeNav"></label>
+                        <a href="#homeLink">Home</a>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="aboutNav">
+                        <label for="aboutNav"></label>
+                        <a href="#aboutMeLink">About Me</a>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="experienceNav">
+                        <label for="experienceNav"></label>
+                        <a href="#experienceLink">Experience</a>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="educationNav">
+                        <label for="educationNav"></label>
+                        <a href="#educationLink">Education & Courses</a>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="projectsNav">
+                        <label for="projectsNav"></label>
+                        <a href="#projectsLink">Projects</a>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio" id="contactNav">
+                        <label for="contactNav"></label>
+                        <a href="#contactMeLink">Contact Me</a>
+                    </li> 
+                </ul> -->
+            </nav>
+        </div>
+  
+        <article>
+            <div class="myImage">
+                <picture>
+                    <source media="(min-width: 750px)" srcset="images/myEmoji-withouBckg-1600_large_2x.png 2x, images/myEmoji-withouBckg-800_large_1x.png">
+                    <source media="(min-width: 500px)" srcset="images/myEmoji-withouBckg-600_medium.png">
+                    <img src="images/myEmoji-withouBckg-320_mall.png" alt="Ahmed Emoji photo">
+                </picture>
+            </div>
+            <div class="myName">
+                <h1>I'm Ahmed Al Junid</h1>
+                <h3>Front End Developer And System Administrator</h3>
+                <a class="download-btn" href="#">Download My Resume</a>
+            </div>
+        </article>
+    </header>
+    <div id="aboutMeLink"></div>
+    <main>
+        <div class="aboutMe">
+            <div class="aboutMeIcon icons">
+                <i class="icon-user"></i>
+            </div>
+            <div class="aboutMeText">
+                <h2>About Me</h2>
+                <p>A Front End Developer And System Administrator. Gained a bachelor's degree in Information Systems 
+                    and have more than 5 years professional experience in the computer industry. Actively working as 
+                    System Administrator and Technical Support Leader for the Administrative Communications System.
+                </p>
+            </div>
+        </div>
+        <div id="experienceLink"></div>
+        <div class="experience">
+            <div class="experienceHead">
+                <i class="icon-network icons"></i>
+                <h2 class="title">
+                    Experience
+                </h2>  
+            </div>
+            <div class="experienceBody">
+                <ul>
+                    <li>
+                        System Administrator and Technical Support Leader for the Administrative Communications System at
+                        Imam Abdulrahman bin Faisal University from 25/09/2014 until now.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Administrative Assistant, Dammam University in Administrative Communication Management &
+                        Documents Center from 20/05/2013 until 24/09/2014:
+                    </li>
+                    <ul>
+                        <li>Manage SSSit Company which provide Dammam University Emorasalat System.</li>
+                        <li>Manage the team from this company and our employees on system implementation.</li>
+                        <li>Trainning coordinator.</li>
+                        <li>Manage Tafel Company which transfer physical documents to electronic data as a database
+                            for the systems as interdepartmental coordinator and liaison.
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Payroll & Personnel Officer, RAR transport Company from 01/11/2012 to 22/05/2013:</li>
+                    <ul>
+                        <li>
+                            Prepare the payroll of all employees by (OFOQ) System, Enter the data of new employee and
+                            their contracts by (OFOQ) System,Make the Exit & Re-entry Visa, Prepare end of
+                            service (Resignation/Termination) by (OFOQ) System and Prepare the Vacation by (OFOQ) system.
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Salesperson, National Company Business Solutions (NCBS) from 06/10/2012 to 30/10/2012:</li>
+                    <ul>
+                        <li>Market and sell the Mobily Company’s products.</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Salesperson, Al-Arfaj Company Trade and Import and its Branches from 01/01/2011 to 31/10/2011:</li>
+                    <ul>
+                        <li>Promote and sell the company’s products to customers and record the sales transactions in the records identified by the Company.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div id="educationLink"></div>
+        <div class="education">
+            <div class="educationHead">
+                <i class="icon-graduation-cap icons"></i>
+                <h2 class="title">
+                    Education And Courses
+                </h2>
+            </div>
+            <div class="educationBody">
+                <div class="edu">
+                    <picture class="kfuLogo eduLogos">
+                        <source media="(min-width: 750px)" srcset="images/kfuLogo-1600_large_2x.png 2x, images/kfuLogo-800_large_1x.png">
+                        <source media="(min-width: 500px)" srcset="images/kfuLogo-600_medium">
+                        <img src="images/logoKFU-320_mall.png" alt=" logo for King Fisal University">
+                    </picture>
+                    <ul>
+                        <li>Bachelors Degree from King Faisal University College of Computer Science and Information Technology.</li>
+                    </ul>
+                </div>
+                <div class="course">
+                    <picture class="udcityLogo eduLogos">
+                        <source media="(min-width: 750px)" srcset="images/udacity&miskLogo-1600_large_2x.png 2x, images/udacity&miskLogo-800_large_1x.png">
+                        <source media="(min-width: 500px)" srcset="images/udacity&miskLogo-600_medium">
+                        <img src="images/udacity&miskLogo-320_mall.png" alt="logo for King Fisal University">
+                    </picture>
+                    <ul>
+                        <li>Front-end Web Developer Nanodegree from Udacity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="projectsLink" class="projects" >
+            <div class="projectsHead">
+                <i class="icon-buffer icons"></i>
+                <h2 class="title">Projects</h2>
+            </div>
+            <div class="projectsBody">
+            <div class="projectList">
+                <div class="over firstOver">
+                    <a href="#">Portfolio Project</a>
+                </div>
+                <picture>
+                    <source media="(min-width: 750px)" srcset="images/portfolioProject-1600_large_2x.png 2x, images/portfolioProject-800_large_1x.png">
+                    <source media="(min-width: 500px)" srcset="images/portfolioProject-600_medium.png">
+                    <img class="portfolioImg" src="images/portfolioProject-320_mall.png" alt=" image for project portfolio design">
+                </picture>
+                </div>
+                <div class="projectList">
+                    <div class="over secondOver">
+                    <a href="#">Memory Game Project</a>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 750px)" srcset="images/memoryGame-1600_large_2x.jpg 2x, images/memoryGame-800_large_1x.jpg">
+                        <source media="(min-width: 500px" srcset="images/memoryGame-600_medium.jpg">
+                        <img src="images/memoryGame-320_mall.jpg" alt="picture for mermory game project">
+                    </picture>
+                </div>
+                <div class="projectList">
+                    <div class="over thirdOver">
+                    <a href="#">Arcade Game Project</a>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 750px)" srcset="images/arcadeGame-1600_large_2x.jpg 2x, images/arcadeGame-800_large_1x.jpg">
+                        <source media="(min-width: 500px)" srcset="images/arcadeGame-600_medium.jpg">
+                        <img src="images/arcadeGame-320_mall.jpg" alt="picture for Arcade Gmae project">
+                    </picture>
+                </div>
+                <div class="projectList">
+                    <div class="over fourthOver">
+                    <a href="#">Feed Reader Testing Project</a>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 750px)" srcset="images/testingProject-1600_large_2x.jpg 2x, images/testingProject-800_large_1x.jpg">
+                        <source media="(min-width: 500px)" srcset="images/testingProject-600_medium.jpg">
+                        <img src="images/testingProject-320_mall.jpg" alt="picture for feed reader testing project">
+                    </picture>
+                </div>
+                <div class="projectList">
+                    <div class="over fifthOver">
+                    <a href="#">Restrant Review Project</a>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 750px)" srcset="images/restruntProject-1600_large_2x.jpg 2x, images/restruntProject-800_large_1x.jpg">
+                        <source media="(min-width: 500px)" srcset="images/restruntProject-600_medium.jpg">
+                        <img src="images/restruntProject-320_mall.jpg" alt="Picture for Restrant Review Project">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div id="contactMeLink" class="contactMe">
+            <div class="contactMeContainer">
+                <div class="contact-links">
+                    <h2>CONTACT ME</h2>
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="icon-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-linkedin-2"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-github"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-
-          <p>&copy; 2019 by Ahmed AlJunid, Front End Developer<p>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Full Name" id="name" required name="fullName" />
+                        <input id="email" placeholder="email" required name="email" />
+                        <input id="subject" type="text" placeholder="Subject" name="subject" />
+                        <textarea type="text" class="message" placeholder="message" required name="message"></textarea>
+                        <button id="btnSend" type="submit">Send</button> 
+                    </form>
+                </div>
+            </div>
         </div>
-    </footer>
-</body><!-- end of the page -->
+    </main>
+    <footer>
+        <div class="copyRight">
+            <p>&copy; Ahmed Al Junid</p>
+        </div>
+        <div class="soical">
+            <a href=""><i class="icon-twitter-squared"></i></a>
+            <a href=""><i class="icon-linkedin-squared"></i></a>
+            <a href=""><i class="icon-github-squared"></i></a>
+        </div>
+    </footer>   
+</body>
 </html>
