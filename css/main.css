@@ -1,10 +1,12 @@
 html {
     scroll-behavior: smooth;
+    width: 100%;
   }
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 
 
@@ -13,7 +15,7 @@ body {
 header {
     background-image: url("../src-images/educationPattern.png");
     display: flex;
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
     max-height: 100%;
 }
@@ -82,7 +84,7 @@ nav ul {
 }
 
 #logoText h2 {
-    font-size: 16px;
+    font-size: 1vw;
     line-height: 0em;
 }
 
@@ -467,4 +469,289 @@ footer .soical a:hover {
 }
 
 
+/* Media Queries */
 
+@media (min-width: 375px) {
+
+    .headerTop {
+        height: 80px;
+        /* border: 1px solid black; */
+        width: 100%;
+        }
+
+    header, 
+    article {
+        width: 100%;
+    }
+
+    div.logo {
+        width: 50%;
+        display: flex;
+        text-align: left;
+        padding-left: 2%;
+    }
+
+    nav {
+        width: 50%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        justify-content: right;
+    }
+
+    #logoText {
+        /* border: 1px solid black; */
+        padding-left: 9%;
+    }
+
+    #logoText h2 {
+        font-size: 1.8vw;
+        line-height: 0em;
+        
+    }
+
+    .menu {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        overflow: hidden;
+        padding-right: 10px;
+    }
+
+    .normalMenu, #check{
+        display: none;
+    }
+
+    .button {
+        background-color: rgba(84, 18, 18, .7);
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        line-height: 10px;
+        padding: 11px 10px;
+        padding-top: 5px;
+        border-radius: 4px; 
+        z-index: 201;
+    }
+
+    .button:hover{
+        background: #8B9A46;;
+    }
+
+    .button span{
+        height: 3px;
+        width: 100%;
+        background: white;
+        display: inline-block;
+        transition: all 0.5s cubic-bezier(.62,.43,.35,1.47);
+    }
+
+    #check:checked ~ .button span:nth-child(1){
+        width: 100%;
+        transform: rotate(45deg) translateY(7px) translateX(7px);
+    }
+    #check:checked ~ .button span:nth-child(2){
+        width: 0;
+    }
+    
+    #check:checked ~ .button span:nth-child(3){
+        width: 100%;
+        transform: rotate(-45deg) translateY(-8px) translateX(8px);
+    }
+
+    .listNav {
+        text-align: left;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,.3);
+        height: 0;
+    }
+
+    .listNav a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        transition: all 0.4s cubic-bezier(.22,.43,.35,1.5);
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top;
+        text-align: center;
+        border-bottom: 1px solid #b4ac97;
+    }
+
+    #check:checked ~ .listNav{
+        height: 260px;
+    }
+
+    #check:checked ~ .listNav a{
+        padding: 10px;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    article {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 120px;
+    }
+
+    article picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    article .myImage img {
+        width: 60%;
+    }
+
+    article .myName {
+        padding-left: 0;
+        padding-top: 20px;
+
+    }
+
+    article .myName h1 {
+        font-size: 1.7em;
+        line-height: 0px;
+    }
+    
+    article .myName h3 {
+        font-size: 1em;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .experience, .education {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .experienceHead,
+    .experienceBody,
+    .educationHead,
+    .educationBody,
+    .projectsHead,
+    .projects{
+        width: 100%;
+    }
+
+    .aboutMeText {
+        text-align: justify;
+    }
+
+    .experienceBody {
+        text-indent: -5px;
+        text-align: left;
+    }
+
+    .experienceBody ul {
+        padding-right: 20px;
+        font-weight: bolder;
+    }
+
+    .experienceBody .normalP,
+    .edu .normalP,
+    .course .normalP {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-right: 10px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .experienceBody .boold {
+        padding-right: 10px;
+        padding-left: 20px;
+        font-weight: bolder;
+    }
+
+    .displayNon {
+        display: none;
+    }
+
+    .edu, .course {
+        display: flex;
+        /* flex-direction: column; */
+        text-align: center;
+    }
+
+    .edu img, .course img {
+        width: 100px;
+    }
+
+    .experienceBody,
+    .educationBody,
+    .educationBody,
+    .projectsBody {
+        border: none;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        height: 200vh;
+        padding: 50px 0;
+    }
+
+    .projectsHead {
+        width: 100%;
+    }
+
+    .projectsBody {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+        height: 200vh;
+        
+    }
+
+    .projectsBody .projectList img  {
+        width: 90vw;
+    }
+
+    .contactMe {
+        margin-bottom: 200px;
+    }
+
+    .contact-links {
+        display: none;
+    }
+
+    .contactMeContainer {
+       width: 100vw;
+       flex-direction: column;
+    }
+
+    .forContactForm {
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    .contact-form {
+        background-image: url("../src-images/educationPattern.png");
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* height: 30vh; */
+    }
+
+
+
+
+
+}
