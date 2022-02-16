@@ -584,6 +584,10 @@ footer .soical a:hover {
         border-bottom: 1px solid #b4ac97;
     }
 
+    .listNav a:hover {
+        color: #541212;
+    }
+
     #check:checked ~ .listNav{
         height: 260px;
     }
