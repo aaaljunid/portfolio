@@ -27,7 +27,7 @@ header {
     padding-top: 10px;
     padding-bottom: 5px;
     position: fixed;
-    width: 100vw;
+    max-width: 100%;
     background-image: url("../src-images/educationPattern.png");
 }
 
@@ -46,6 +46,10 @@ nav {
     justify-content: space-around;
 }
 
+nav .menu {
+    display: none;
+}
+
 article {
     padding-top: 15%;
     padding-bottom: 12%;
@@ -54,6 +58,7 @@ article {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 article .myName {
@@ -70,7 +75,7 @@ article .myName {
 
 nav ul {
     display: flex;
-    min-width: 70%;
+    min-width: 90%;
     justify-content: space-around;
     align-items: center;
 }
@@ -122,7 +127,7 @@ nav ul li{
 
 nav ul li a {
     color:#541212;
-    font-size: 20px;
+    font-size: 1em;
     text-transform: uppercase;
     transition: all 0.5s ease;
     font-weight: bolder;
@@ -154,7 +159,7 @@ article .myName h3 {
     font-size: 18px;
     padding: 20px 15px;
     color: #fff;
-    background-color: rgba(84, 18, 18, .7);
+    background-color: #8B9A46;
     max-width: 100%;
     border-radius: 6px;
     overflow: hidden;
@@ -162,7 +167,7 @@ article .myName h3 {
 }
 
 .download-btn:hover {
-    background-color: #8B9A46;
+    background-color: rgba(84, 18, 18, .7);
 }
 
 
@@ -174,7 +179,6 @@ main {
     padding-top: 5%;
     font-size: 18px;
     line-height: 1.5em;
-    max-width: 100%;
 }
 
 .aboutMe {
@@ -212,17 +216,22 @@ main .icons {
 }
 
 .experienceHead {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .experienceBody {
-    width: 75%;
+    width: 70%;
     border-left: 1px dashed #541212;
-    text-align: justify;
+    padding-right: 15px;
+    /* text-align: justify; */
+}
+
+.experienceBody p {
+    display: none;
 }
 
 main h2 {
@@ -236,17 +245,17 @@ main h2 {
 }
 
 .educationHead {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .educationBody {
-    width: 75%;
+    width: 70%;
     border-left: 1px dashed #541212;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .edu, .course {
@@ -258,6 +267,10 @@ main h2 {
     padding-bottom: 3%;
 }
 
+.educationBody p {
+    display: none;
+}
+
 .projects {
     background-color: #EEEEEE;
     display: flex;
@@ -266,15 +279,15 @@ main h2 {
 }
 
 .projectsHead {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .projectsBody {
-    width: 75%;
+    width: 70%;
     border-left: 1px dashed #541212;
     display: flex;
     flex-direction: row;
@@ -297,6 +310,7 @@ main h2 {
 
 .projectsBody .projectList img{
     width: 20vw;
+    height: 25vh;
 }
 
 .portfolioImg {
@@ -311,10 +325,11 @@ main h2 {
     text-align: center;
     transition: padding 0.5s;
     padding: 0;
+    max-width: 15%;
   }
   
   .over:hover {
-    padding: 30px; 
+    padding: 30px 0; 
   }
 
 .over a {
@@ -354,7 +369,6 @@ main h2 {
     color: #541212;
     width: 100%;
     text-align: center;
-    font-size: 40px;
 }
 
 .contact-form {
@@ -363,6 +377,11 @@ main h2 {
     display: flex;
     width: 100%;
     padding-top: 3%;
+}
+
+.contact-form i,
+.contact-form h2 {
+    display: none;
 }
 
 .contact-links .links {
@@ -376,16 +395,16 @@ main h2 {
     padding: 10px 0 0 0;
     display: flex;
     justify-content: space-around;
-    font-size: 40px;
+    font-size: 1.5em;
 }
 
 .contact-links .links ul li a {
-    color:rgba(84, 18, 18, .7);
+    color: #8B9A46;
     transition: all 0.5s ease;
 }
 
 .contact-links .links ul li a:hover {
-    color: #8B9A46;
+    color:rgba(84, 18, 18, .7);
     font-weight: bolder;
 }
 
@@ -394,7 +413,7 @@ form {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    padding: 10px 0;
+    padding: 30px 0;
     width: 100%;
 }
 
@@ -426,7 +445,7 @@ form textarea {
 form button {
     width: 200px;
     height: 40px;
-    background-color: rgba(84, 18, 18, .7);
+    background-color: #8B9A46;
     color: #fff;
     font-size: 20px;
     border: none;
@@ -438,13 +457,14 @@ form button {
 } 
 
 form button:hover {
-    background-color: #8B9A46;
+    background-color: rgba(84, 18, 18, .7);
     cursor: pointer;
 }
 
 
 footer {
     background-image: url("../src-images/educationPattern.png");
+    background-color: #541212;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -452,30 +472,35 @@ footer {
 }
 
 footer .copyRight {
-   color: #541212;
+   /* color: #541212; */
+   color: #8B9A46;
    font-weight: bolder;
    font-size: 20px;
    font-family: 'Kodchasan', sans-serif;
 }
 
 footer .soical a {
-    color:rgba(84, 18, 18, .7);
+    /* color:rgba(84, 18, 18, .7); */
+    color: #8B9A46;
     font-size: 45px;
     transition: all 0.5s ease;
 }
 
 footer .soical a:hover {
-    color: #8B9A46;
+    color: #fff;
 }
 
 
 /* Media Queries */
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 400px) {
 
+    header {
+       width: 100%;
+    }
     .headerTop {
         height: 80px;
-        /* border: 1px solid black; */
+        border: 1px solid black;
         width: 100%;
         }
 
@@ -509,7 +534,7 @@ footer .soical a:hover {
         
     }
 
-    .menu {
+    nav .menu {
         width: 30%;
         display: flex;
         flex-direction: column;
@@ -523,7 +548,7 @@ footer .soical a:hover {
     }
 
     .button {
-        background-color: rgba(84, 18, 18, .7);
+        background: #8B9A46;
         display: inline-block;
         cursor: pointer;
         transition: all 0.2s ease-in;
@@ -535,7 +560,7 @@ footer .soical a:hover {
     }
 
     .button:hover{
-        background: #8B9A46;;
+        background-color: rgba(84, 18, 18, .7);
     }
 
     .button span{
@@ -598,6 +623,7 @@ footer .soical a:hover {
         transform: scale(1);
     }
 
+
     article {
         flex-direction: column;
         justify-content: center;
@@ -651,6 +677,7 @@ footer .soical a:hover {
     .experienceBody {
         text-indent: -5px;
         text-align: left;
+        padding: 0;
     }
 
     .experienceBody ul {
@@ -661,16 +688,23 @@ footer .soical a:hover {
     .experienceBody .normalP,
     .edu .normalP,
     .course .normalP {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         padding-right: 10px;
         padding-left: 20px;
         text-align: left;
+    }
+
+    .experienceBody .normalP {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .experienceBody .boold {
         padding-right: 10px;
         padding-left: 20px;
         font-weight: bolder;
+    }
+
+        .experienceBody p {
+        display: flex;
     }
 
     .displayNon {
@@ -689,16 +723,21 @@ footer .soical a:hover {
 
     .experienceBody,
     .educationBody,
-    .educationBody,
     .projectsBody {
         border: none;
     }
+
+    .educationBody p {
+        display: flex;
+    }
+
+
 
     .projects {
         display: flex;
         flex-direction: column;
         padding: 0;
-        height: 200vh;
+        /* height: 250vh; */
         padding: 50px 0;
     }
 
@@ -720,8 +759,14 @@ footer .soical a:hover {
         width: 90vw;
     }
 
+    .over {
+        max-width: 100%;
+      }
+    
+
     .contactMe {
-        margin-bottom: 200px;
+        margin-bottom: 151px;
+        width: 100%;
     }
 
     .contact-links {
@@ -731,6 +776,7 @@ footer .soical a:hover {
     .contactMeContainer {
        width: 100vw;
        flex-direction: column;
+       margin: 0;
     }
 
     .forContactForm {
@@ -746,6 +792,11 @@ footer .soical a:hover {
         align-items: center;
     }
 
+.contact-form i,
+.contact-form h2 {
+    display: flex;
+}
+
 
 
     footer {
@@ -754,7 +805,11 @@ footer .soical a:hover {
         /* height: 30vh; */
     }
 
+    /* main {
+        display: none;
+    } */
 
+    
 
 
 
